@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminrechargeCard" extends="struts-default" namespace="/admin">
+    	<action name="rechargeCardList" class="rechargeCardAction" method="list">
+    	</action>
+    	<action name="rechargeCardAdd" class="rechargeCardAction" method="add">
+    	</action>
+    	<action name="rechargeCardSave" class="rechargeCardAction" method="save">
+    	</action>
+    	<action name="rechargeCardEdit" class="rechargeCardAction" method="info">
+    	</action>
+    	<action name="rechargeCardUpdate" class="rechargeCardAction" method="update">
+    	</action>
+    	<action name="rechargeCardDelete" class="rechargeCardAction" method="delete">
+    	</action>
+	</package>
+	<package name="rechargeCardIndex" extends="struts-default" namespace="/user">
+    	<action name="userUseRechargeCard" class="rechargeCardAction" method="userUseRechargeCard">
+    	</action>
+	</package>
+</struts>  

@@ -1,0 +1,48 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminUser" extends="struts-default" namespace="/admin">
+    	<action name="userList" class="userAction" method="list">
+    		<param name="ftlFileName">userList.ftl</param>
+    	</action>
+    	<action name="userAdd" class="userAction" method="add">
+    	</action>
+    	<action name="userSave" class="userAction" method="save">
+    	</action>
+    	<action name="userEdit" class="userAction" method="info">
+    		<param name="ftlFileName">userEdit.ftl</param>
+    	</action>
+    	<action name="userUpdate" class="userAction" method="update">
+    	</action>
+    	<action name="userDelete" class="userAction" method="delete">
+    	</action>
+	</package>
+	<package name="userIndex" extends="struts-default" namespace="/">
+    	<action name="register" class="userAction" method="register">
+    	</action>
+    	<action name="login" class="userAction" method="login">
+    	</action>
+    	<action name="createUserNo" class="userAction" method="createUserNo">
+    	</action>
+    	<action name="promote" class="userAction" method="promote">
+    	</action>
+    	<action name="resetPassword" class="userAction" method="resetPassword">
+    	</action>
+	</package>
+	<package name="userCenter" extends="struts-default" namespace="/user">
+    	<action name="changePassword" class="userAction" method="changePassword">
+    	</action>
+    	<action name="logout" class="userAction" method="logout">
+    	</action>
+    	<action name="userInfoJson" class="userAction" method="userInfoJson">
+    	</action>
+    	<action name="commissionToBalance" class="userAction" method="commissionToBalance">
+    	</action>
+    	<action name="balanceToUser" class="userAction" method="balanceToUser">
+    	</action>
+    	<action name="levelUserList" class="userAction" method="levelUserList">
+    	</action>
+	</package>
+</struts>  

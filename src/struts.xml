@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!--使用spring创建管理struts2的action操作 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.i18n.reload" value="false" />
+	<constant name="struts.configuration.xml.reload" value="false" />
+
+
+	<constant name="struts.convention.result.path" value="/" />
+	<constant name="struts.serve.static" value="true" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<constant name="struts.multipart.saveDir" value="/tmp" />
+	<!-- 设置文件上传的大小 -->
+	<constant name="struts.multipart.maxSize" value="900000000"/>
+	
+	
+	<include file="struts_admin.xml"/>
+	<include file="struts_articleCate.xml"/>
+	<include file="struts_article.xml"/>
+	<include file="struts_common.xml"/>
+	<include file="struts_config.xml"/>
+	<include file="struts_message.xml"/>
+	<include file="struts_productCate.xml"/>
+	<include file="struts_product.xml"/>
+	<include file="struts_user.xml"/>
+	<include file="struts_kami.xml"/>
+	<include file="struts_orders.xml"/>
+	<include file="struts_financial.xml"/>
+	<include file="struts_commission.xml"/>
+	<include file="struts_withdraw.xml"/>
+	<include file="struts_phoneValidateCode.xml"/>
+	<include file="struts_recharge.xml"/>
+	<include file="struts_rechargeCard.xml"/>
+</struts> 

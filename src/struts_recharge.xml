@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminrecharge" extends="struts-default" namespace="/admin">
+    	<action name="rechargeList" class="rechargeAction" method="list">
+    		<param name="ftlFileName">rechargeList.ftl</param>
+    	</action>
+    	
+    	<action name="rechargeSave" class="rechargeAction" method="save">
+    	</action>
+    	<action name="rechargeEdit" class="rechargeAction" method="info">
+    		<param name="ftlFileName">rechargeEdit.ftl</param>
+    	</action>
+    	<action name="rechargeUpdate" class="rechargeAction" method="update">
+    	</action>
+    	<action name="rechargeDelete" class="rechargeAction" method="delete">
+    	</action>
+	</package>
+	<package name="rechargeUser" extends="struts-default" namespace="/user">
+    	<action name="alipayApi" class="alipayAction" method="alipayApi">
+    	</action>
+	</package>
+	<package name="rechargeIndex" extends="struts-default" namespace="/">
+    	<action name="notifyUrl" class="alipayAction" method="notifyUrl">
+    	</action>
+    	<action name="returnUrl" class="alipayAction" method="returnUrl">
+    	</action>
+	</package>
+</struts>  

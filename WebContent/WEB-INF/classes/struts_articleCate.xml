@@ -1,0 +1,22 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="articleCateAdmin" extends="struts-default" namespace="/admin">
+    	<action name="articleCateList" class="articleCateAction" method="list">
+    	</action>
+    	<action name="articleCateAdd" class="articleCateAction" method="add">
+    	</action>
+    	<action name="articleCateSave" class="articleCateAction" method="save">
+    	</action>
+    	<action name="articleCateEdit" class="articleCateAction" method="info">
+    	</action>
+    	<action name="articleCateUpdate" class="articleCateAction" method="update">
+    	</action>
+    	<action name="articleCateDelete" class="articleCateAction" method="delete">
+    	</action>
+    	<action name="articleCateGetNameById" class="articleCateAction" method="getNameById">
+    	</action>
+	</package>
+</struts>  

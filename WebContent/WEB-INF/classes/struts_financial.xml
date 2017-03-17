@@ -1,0 +1,27 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminfinancial" extends="struts-default" namespace="/admin">
+    	<action name="financialList" class="financialAction" method="list">
+    		<param name="ftlFileName">financialList.ftl</param>
+    	</action>
+    	<action name="financialAdd" class="financialAction" method="add">
+    		<param name="ftlFileName">financialAdd.ftl</param>
+    	</action>
+    	<action name="financialSave" class="financialAction" method="save">
+    	</action>
+    	<action name="financialEdit" class="financialAction" method="info">
+    		<param name="ftlFileName">financialEdit.ftl</param>
+    	</action>
+    	<action name="financialUpdate" class="financialAction" method="update">
+    	</action>
+    	<action name="financialDelete" class="financialAction" method="delete">
+    	</action>
+	</package>
+	<package name="userfinancial" extends="struts-default" namespace="/user">
+		<action name="financialList" class="financialAction" method="userFinancialList">
+    	</action>
+	</package>
+</struts>  

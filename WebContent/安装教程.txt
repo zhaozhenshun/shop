@@ -1,0 +1,25 @@
+开发语言：JAVA
+开发框架：Struts2+Spring+Hibernate
+后台用到Freemarker模板引擎
+
+服务器环境：
+	JDK1.7
+	Tomcat7.0
+	Mysql5.1
+
+安装教程：
+	1、将重新上传到支持JAVA的空间或者服务器上；
+	2、导入数据库，将fenxiao.sql导入到mysql数据库中；
+	3、修改数据库信息，修改文件：WEB-INF\classes\database.properties
+
+jdbc.user=数据库用户名
+jdbc.password=数据库密码
+jdbc.driverClass=com.mysql.jdbc.Driver
+jdbc.jdbcUrl=jdbc\:mysql\://数据库IP\:3306/数据库名?useUnicode\=true&amp;characterEncoding\=UTF-8&amp;autoReconnect\=true
+
+	4、重启Tomcat。
+后台路径：http://域名/admin
+后台用户名：admin
+密码：admin
+
+

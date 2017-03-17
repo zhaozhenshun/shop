@@ -1,0 +1,28 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="productAdmin" extends="struts-default" namespace="/admin">
+    	<action name="productList" class="productAction" method="list">
+    	</action>
+    	<action name="productAdd" class="productAction" method="add">
+    	</action>
+    	<action name="productSave" class="productAction" method="save">
+    	</action>
+    	<action name="productEdit" class="productAction" method="info">
+    	</action>
+    	<action name="productUpdate" class="productAction" method="update">
+    	</action>
+    	<action name="productDelete" class="productAction" method="delete">
+    	</action>
+    	<action name="productGetNameById" class="productAction" method="getNameById">
+    	</action>
+	</package>
+	<package name="productIndex" extends="struts-default" namespace="/">
+    	<action name="list" class="productAction" method="indexProductList">
+    	</action>
+    	<action name="detail" class="productAction" method="productDetail">
+    	</action>
+	</package>
+</struts>  

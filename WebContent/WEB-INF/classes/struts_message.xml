@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="messageAdmin" extends="struts-default" namespace="/admin">
+    	<action name="messageList" class="messageAction" method="list">
+    	</action>
+    	<action name="messageAdd" class="messageAction" method="add">
+    	</action>
+    	<action name="messageSave" class="messageAction" method="save">
+    	</action>
+    	<action name="messageReply" class="messageAction" method="info">
+    	</action>
+    	<action name="messageUpdate" class="messageAction" method="update">
+    	</action>
+    	<action name="messageDelete" class="messageAction" method="delete">
+    	</action>
+	</package>
+</struts>  

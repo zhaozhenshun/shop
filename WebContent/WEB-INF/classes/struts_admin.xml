@@ -1,0 +1,44 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminLogin" extends="struts-default" namespace="/">
+		<action name="adminLogin">
+    		<result name="success">/WEB-INF/templates/admin/login.ftl</result>
+    	</action>
+		<action name="adminLoginResult" class="adminAction" method="login">
+		</action>
+		<action name="changeAdmin" class="adminAction" method="changeAdmin">
+    	</action>
+    	<action name="setdatabase" class="adminAction" method="database">
+    	</action>
+	</package>
+	
+	<package name="adminIndex" extends="struts-default" namespace="/admin">
+		<action name="index" class="adminAction" method="index">
+    	</action>
+    	<action name="adminList" class="adminAction" method="list">
+    	</action>
+    	<action name="adminAdd" class="adminAction" method="add">
+    	</action>
+    	<action name="adminSave" class="adminAction" method="save">
+    	</action>
+    	<action name="adminEdit" class="adminAction" method="info">
+    	</action>
+    	<action name="adminUpdate" class="adminAction" method="update">
+    	</action>
+    	<action name="adminDelete" class="adminAction" method="delete">
+    	</action>
+    	<action name="changePwd" class="adminAction" method="changePwd">
+    	</action>
+    	<action name="changePwdResult" class="adminAction" method="changePwdResult">
+    	</action>
+    	<action name="logout" class="adminAction" method="logout">
+    		<result name="success" type="redirectAction">
+    			<param name="namespace">/</param>
+    			<param name="actionName">adminLogin</param>
+    		</result>
+    	</action>
+	</package>
+</struts>  

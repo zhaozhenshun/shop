@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="kamiAdmin" extends="struts-default" namespace="/admin">
+    	<action name="kamiList" class="kamiAction" method="list">
+    	</action>
+    	<action name="kamiAdd" class="kamiAction" method="add">
+    	</action>
+    	<action name="kamiSave" class="kamiAction" method="save">
+    	</action>
+    	<action name="kamiEdit" class="kamiAction" method="info">
+    	</action>
+    	<action name="kamiUpdate" class="kamiAction" method="update">
+    	</action>
+    	<action name="kamiDelete" class="kamiAction" method="delete">
+    	</action>
+    	<action name="uploadKami" class="kamiAction" method="uploadKami">
+    	</action>
+    	<action name="uploadKamiPage" class="kamiAction" method="uploadKamiPage">
+    	</action>
+	</package>
+</struts>  

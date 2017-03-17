@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminconfig" extends="struts-default" namespace="/admin">
+    	<action name="configEdit" class="configAction" method="info">
+    	</action>
+    	<action name="configUpdate" class="configAction" method="update">
+    	</action>
+    	<action name="indexConfigEdit" class="configAction" method="indexInfo">
+    	</action>
+    	<action name="indexConfigUpdate" class="configAction" method="indexUpdate">
+    	</action>
+	</package>
+</struts>  

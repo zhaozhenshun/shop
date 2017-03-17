@@ -1,0 +1,10 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="commonAction" extends="struts-default" namespace="/admin">
+    	<action name="uploadImages" class="uploadAction" method="doUpload">
+    	</action>
+	</package>
+</struts>  

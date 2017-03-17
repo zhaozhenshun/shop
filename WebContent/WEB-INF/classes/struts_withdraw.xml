@@ -1,0 +1,29 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="adminwithdraw" extends="struts-default" namespace="/admin">
+    	<action name="withdrawList" class="withdrawAction" method="list">
+    		<param name="ftlFileName">withdrawList.ftl</param>
+    	</action>
+    	<action name="withdrawAdd" class="withdrawAction" method="add">
+    		<param name="ftlFileName">withdrawAdd.ftl</param>
+    	</action>
+    	<action name="withdrawEdit" class="withdrawAction" method="info">
+    		<param name="ftlFileName">withdrawEdit.ftl</param>
+    	</action>
+    	<action name="withdrawUpdate" class="withdrawAction" method="update">
+    	</action>
+    	<action name="withdrawDelete" class="withdrawAction" method="delete">
+    	</action>
+    	<action name="withdrawDetail" class="withdrawAction" method="detail">
+    	</action>
+	</package>
+	<package name="userwithdraw" extends="struts-default" namespace="/user">
+		<action name="withdrawList" class="withdrawAction" method="userWithdrawList">
+    	</action>
+    	<action name="withdrawSave" class="withdrawAction" method="save">
+    	</action>
+	</package>
+</struts>  

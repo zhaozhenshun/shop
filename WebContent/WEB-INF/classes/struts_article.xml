@@ -1,0 +1,54 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="articleAdmin" extends="struts-default" namespace="/admin">
+    	<action name="articleList" class="articleAction" method="list">
+    	</action>
+    	<action name="articleAdd" class="articleAction" method="add">
+    	</action>
+    	<action name="articleSave" class="articleAction" method="save">
+    	</action>
+    	<action name="articleEdit" class="articleAction" method="info">
+    	</action>
+    	<action name="articleUpdate" class="articleAction" method="update">
+    	</action>
+    	<action name="articleDelete" class="articleAction" method="delete">
+    	</action>
+    	<action name="articleGetNameById" class="articleAction" method="getNameById">
+    	</action>
+	</package>
+	<package name="articleIndex" extends="struts-default" namespace="/article">
+    	<action name="list" class="articleAction" method="indexArticleList">
+    		<param name="ftlFileName">articleList.ftl</param>
+    	</action>
+    	<action name="detail" class="articleAction" method="indexArticle">
+    		<param name="ftlFileName">article.ftl</param>
+    	</action>
+	</package>
+	<package name="articleEnIndex" extends="struts-default" namespace="/en/article">
+    	<action name="list" class="articleAction" method="indexArticleList">
+    		<param name="ftlFileName">/en/articleList.ftl</param>
+    	</action>
+    	<action name="detail" class="articleAction" method="indexArticle">
+    		<param name="ftlFileName">/en/article.ftl</param>
+    	</action>
+	</package>
+	<package name="articlemIndex" extends="struts-default" namespace="/m/article">
+    	<action name="list" class="articleAction" method="indexArticleList">
+    		<param name="ftlFileName">/m/articleList.ftl</param>
+    	</action>
+    	<action name="detail" class="articleAction" method="indexArticle">
+    		<param name="ftlFileName">/m/article.ftl</param>
+    	</action>
+	</package>
+	<package name="articlemenIndex" extends="struts-default" namespace="/m/en/article">
+    	<action name="list" class="articleAction" method="indexArticleList">
+    		<param name="ftlFileName">/m/en/articleList.ftl</param>
+    	</action>
+    	<action name="detail" class="articleAction" method="indexArticle">
+    		<param name="ftlFileName">/m/en/article.ftl</param>
+    	</action>
+	</package>
+</struts>  

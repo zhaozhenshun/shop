@@ -1,0 +1,27 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="admincommission" extends="struts-default" namespace="/admin">
+    	<action name="commissionList" class="commissionAction" method="list">
+    		<param name="ftlFileName">commissionList.ftl</param>
+    	</action>
+    	<action name="commissionAdd" class="commissionAction" method="add">
+    		<param name="ftlFileName">commissionAdd.ftl</param>
+    	</action>
+    	<action name="commissionSave" class="commissionAction" method="save">
+    	</action>
+    	<action name="commissionEdit" class="commissionAction" method="info">
+    		<param name="ftlFileName">commissionEdit.ftl</param>
+    	</action>
+    	<action name="commissionUpdate" class="commissionAction" method="update">
+    	</action>
+    	<action name="commissionDelete" class="commissionAction" method="delete">
+    	</action>
+	</package>
+	<package name="usercommission" extends="struts-default" namespace="/user">
+		<action name="commissionList" class="commissionAction" method="userCommissionList">
+    	</action>
+	</package>
+</struts>  
